@@ -1,0 +1,15 @@
+{
+  "id": "cam_rig_001",
+  "name": "Studio Hero Rig",
+  "schemaVersion": "1.0.0",
+  "focalLength": 50,
+  "sensorWidth": 36,
+  "aperture": 4,
+  "focusDistance": 6.0,
+  "nearClip": 0.1,
+  "farClip": 500,
+  "dof": true,
+  "position": [4.2, 1.5, 5.8],
+  "target": [0, 0.8, 0],
+  "preset": "Front 3/4"
+}

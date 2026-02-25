@@ -1,0 +1,10 @@
+node_modules
+*.pyc
+__pycache__
+.venv
+dist
+build
+*.log
+services/backend/data
+apps/desktop/dist-electron
+apps/desktop/.vite

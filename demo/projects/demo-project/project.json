@@ -1,0 +1,18 @@
+{
+  "id": "demo-project",
+  "schemaVersion": "1.0.0",
+  "name": "Falcon EV 2026 Studio",
+  "rootDir": "demo/projects/demo-project",
+  "car": {
+    "model": "Falcon EV",
+    "year": 2026,
+    "platform": "EV2",
+    "trims": ["Sport", "GT", "Launch"]
+  },
+  "renderFolders": ["demo/projects/demo-project/renders"],
+  "datasets": ["datasets/falcon_gt_v1"],
+  "cameraRigs": ["cameras/main_rig.json"],
+  "graphs": ["graphs/master_workflow.json"],
+  "loraVersions": [],
+  "outputs": []
+}

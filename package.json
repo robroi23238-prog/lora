@@ -1,0 +1,15 @@
+{
+  "name": "lora-studio",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:desktop": "npm --workspace @lora/desktop run dev",
+    "dev:backend": "cd services/backend && uvicorn app.main:app --reload --port 8000",
+    "build": "npm --workspace @lora/desktop run build",
+    "dev": "node scripts/dev.mjs"
+  }
+}
