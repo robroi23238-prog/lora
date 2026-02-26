@@ -38,6 +38,47 @@ pip install -r services/backend/requirements.txt
 
 ## Run
 
+## Build installable desktop app (Windows)
+
+This repository now includes a Windows installer pipeline.
+
+### Prerequisites
+
+- Node.js 20+
+- Python 3.10+
+- Windows machine (or Windows runner) for `.exe` output
+
+### Build steps
+
+From repo root:
+
+```bash
+npm install
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r services/backend/requirements-build.txt
+npm run build:installer
+```
+
+What this does:
+1. Freezes backend to `services/backend/dist/` via PyInstaller (`lora-backend.exe`).
+2. Builds React desktop assets.
+3. Packages Electron app with NSIS installer.
+
+### Installer output
+
+Look in:
+- `apps/desktop/dist-electron/`
+
+Typical artifact:
+- `LoRA Studio Setup <version>.exe`
+
+### Install + run
+
+1. Double-click installer `.exe`.
+2. Launch **LoRA Studio** from Start Menu or desktop shortcut.
+3. App starts local backend automatically and opens the desktop window.
+
 ### Quick start (single command)
 
 ```bash
