@@ -60,6 +60,21 @@ npm run dev:backend
 
 Preview URL: `http://localhost:5173`.
 
+### Public browser link (optional)
+
+If you want a shareable URL (outside your local machine), run:
+
+```bash
+npm run share
+```
+
+- This starts the app and opens a tunnel on port `5173`.
+- If `cloudflared` is installed, it will be used first.
+- If not, `ngrok` is used (if installed).
+- The command prints an `https://...` URL you can open/share.
+
+> Note: frontend API requests use `/api` and Vite proxies them to `http://localhost:8000`, so the shared frontend URL also works with backend endpoints while your dev process is running.
+
 ## Core workflow
 
 ### Create/Open project

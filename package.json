@@ -10,6 +10,7 @@
     "dev:desktop": "npm --workspace @lora/desktop run dev",
     "dev:backend": "cd services/backend && uvicorn app.main:app --reload --port 8000",
     "build": "npm --workspace @lora/desktop run build",
-    "dev": "node scripts/dev.mjs"
+    "dev": "node scripts/dev.mjs",
+    "share": "node scripts/share.mjs"
   }
 }
